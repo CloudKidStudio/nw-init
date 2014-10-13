@@ -1,0 +1,11 @@
+{
+	"name": "_AppName_",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"jqueryui": "*",
+		"underscore": "*",
+		"bootstrap": "~3.2.0",
+		"node-webkit-app": "*"
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "_AppName_",
+  "description": "_AppDescription_",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "_githubRepo_"
+  },
+  "main": "index.html",
+  "single-instance": true,
+  "window": {
+    "icon": "assets/images/icon.png",
+    "show": false,
+    "toolbar": false,
+    "frame": true,
+    "position": "center",
+    "width": 480,
+    "height": 400,
+    "min_width": 400,
+    "min_height": 275,
+    "resizable": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

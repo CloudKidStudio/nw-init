@@ -1,0 +1,31 @@
+{
+  "name": "nw-init",
+  "version": "0.0.1",
+  "description": "Provides scaffolding for node-webkit applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CloudKidStudio/nw-init"
+  },
+  "author": "Matt Karl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudKidStudio/nw-init/issues"
+  },
+  "homepage": "https://github.com/CloudKidStudio/nw-init",
+  "dependencies": {
+    "decompress": "^2.0.0",
+    "glob": "^4.0.6",
+    "latest": "^0.1.2",
+    "ncp": "^1.0.0",
+    "prompt": "^0.2.14",
+    "replace": "^0.3.0",
+    "mkdirp": "^0.5.0"
+  },
+  "bin": {
+    "nw-init": "index.js"
+  }
+}
