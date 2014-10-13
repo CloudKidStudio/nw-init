@@ -104,6 +104,11 @@ if (WEB)
 }
 ```
 
+## Examples
+
+* [RemoteTrace](https://github.com/CloudKidStudio/RemoteTrace)
+* [CaptionCreator](https://github.com/CloudKidStudio/CaptionCreator)
+
 ##License
 
 MIT License
