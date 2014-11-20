@@ -58,7 +58,7 @@ brew install wine
 
 ## Building
 
-The Grunt project is an extension of the [grunt-game-builder](https://github.com/CloudKidStudio/grunt-game-builder) and all those grunt tasks can be used on your app. In addition, there are several Grunt tasks that are specific and useful to building your node-webkit application:
+The Grunt project is an extension of the [project-grunt](https://github.com/CloudKidStudio/project-grunt) and all those grunt tasks can be used on your app. In addition, there are several Grunt tasks that are specific and useful to building your node-webkit application:
 
 Task | Description
 ---|---
@@ -83,7 +83,7 @@ grunt app package
 
 ## Conditional Compiling
 
-In addition to `grunt-game-builder`'s `DEBUG` and `RELEASE` condititional constants for JavaScript, applications created with nw-init support `APP` and `WEB`.
+In addition to `project-grunt`'s `DEBUG` and `RELEASE` condititional constants for JavaScript, applications created with nw-init support `APP` and `WEB`.
 
 ```js
 
