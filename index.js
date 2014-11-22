@@ -222,7 +222,7 @@ function setupDone()
 	process.chdir(destFolder);
 
 	var npm = require("npm");
-	npm.load(npm.config, function(err){
+	npm.load(function(err){
 
 		// Check for errors
 		if (err)
@@ -239,7 +239,7 @@ function setupDone()
 			process.exit();
 		});
 
-		npm.on("log", function(message){
+		npm.registry.log.on("log", function(message){
 			// log the progress of the installation
 			console.log(message);
 		});

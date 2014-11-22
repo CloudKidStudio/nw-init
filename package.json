@@ -1,6 +1,6 @@
 {
 	"name": "nw-init",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Provides scaffolding for node-webkit applications",
 	"main": "index.js",
 	"scripts": {
@@ -17,6 +17,7 @@
 	},
 	"homepage": "https://github.com/CloudKidStudio/nw-init",
 	"dependencies": {
+		"npm": "~2.1.9",
 		"decompress": "^2.0.0",
 		"glob": "^4.0.6",
 		"latest": "^0.1.2",
