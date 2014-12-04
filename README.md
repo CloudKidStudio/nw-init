@@ -1,6 +1,6 @@
 # Node Webkit Application Initializer
 
-[![Dependency Status](https://david-dm.org/CloudKidStudio/nw-init.svg)](https://david-dm.org/CloudKidStudio/nw-init)
+[![Dependency Status](https://david-dm.org/CloudKidStudio/nw-init.svg)](https://david-dm.org/CloudKidStudio/nw-init) [![npm version](https://badge.fury.io/js/nw-init.svg)](http://badge.fury.io/js/nw-init)
 
 Node plugin for creating scaffolding necessary to start a new node-webkit application. This creates the project structure need to build Windows and OSX Applications. It also will package your application into a sexy and simple setup installer DMG or EXE. Initialized application automatically include [Bootstrap](http://getbootstrap.com/) and [JQuery](http://jquery.com).
 
