@@ -1,4 +1,4 @@
-(function(undefined){
+(function(){
 
 	// Import classes
 	var NodeWebkitApp = cloudkid.NodeWebkitApp;
@@ -23,6 +23,9 @@
 				gui.Window.get().menu = menu;
 			}
 		}
+
+		// Show the window
+		this.main.show();
 	};
 
 	// Reference to the prototype
@@ -34,10 +37,9 @@
 	*/
 	p.close = function()
 	{
-
 	};
 
-	// Assign to namespace
-	namespace("_namespace_")._AppName_ = _AppName_;
+	// Create the application
+	$(function(){ window.app = new _namespace_._AppName_(); });
 
 }());
