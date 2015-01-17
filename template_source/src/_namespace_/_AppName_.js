@@ -40,6 +40,6 @@
 	};
 
 	// Create the application
-	$(function(){ window.app = new _namespace_._AppName_(); });
+	$(function(){ window.app = new _AppName_(); });
 
 }());
