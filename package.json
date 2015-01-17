@@ -1,6 +1,6 @@
 {
 	"name": "nw-init",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Provides scaffolding for node-webkit applications",
 	"main": "index.js",
 	"scripts": {
