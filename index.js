@@ -23,10 +23,11 @@ var prompt = require('prompt'),
 	sourceFolder = path.join(__dirname, 'template_source');
 
 // We'll do this once we publish to check for a new version
-latest.checkupdate(p, function(code, message){
-	console.log(message);
-	(code === 0) ? start() : process.exit(code);
-});
+// latest.checkupdate(p, function(code, message){
+// 	console.log(message);
+// 	(code === 0) ? start() : process.exit(code);
+// });
+start();
 
 /**
 *  Start by asking the user for their choices
@@ -239,9 +240,27 @@ function setupDone()
 			process.exit();
 		});
 
-		npm.registry.log.on("log", function(message){
+		npm.registry.log.on("log", function(result){
 			// log the progress of the installation
-			console.log(message);
+			if (typeof result == "object")
+			{
+				switch(result.level)
+				{
+					case 'warn': 
+						console.log(result.message.yellow);
+						break;
+					case 'error':
+						console.log(result.message.red);
+						break;
+					case 'http':
+						console.log(result.message.green);
+						break;
+				}
+			}
+			else
+			{
+				console.log(result);
+			}
 		});
 	});
 }

@@ -3,7 +3,7 @@ module.exports = {
 		files: [
 			'<%= project.css.main %>',
 			'<%= project.file %>',
-			'src/less/**/*.less'
+			'src/**/*.less'
 		],
 		tasks: [
 			'less:development'

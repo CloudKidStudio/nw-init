@@ -1,8 +1,8 @@
-# Node Webkit Application Initializer
+# NW.js Application Initializer
 
 [![Dependency Status](https://david-dm.org/CloudKidStudio/nw-init.svg)](https://david-dm.org/CloudKidStudio/nw-init) [![npm version](https://badge.fury.io/js/nw-init.svg)](http://badge.fury.io/js/nw-init)
 
-Node plugin for creating scaffolding necessary to start a new node-webkit application. This creates the project structure need to build Windows and OSX Applications. It also will package your application into a sexy and simple setup installer DMG or EXE. Initialized application automatically include [Bootstrap](http://getbootstrap.com/) and [JQuery](http://jquery.com).
+Node plugin for creating scaffolding necessary to start a new NW.js application. This creates the project structure need to build Windows and OSX Applications. It also will package your application into a sexy and simple setup installer DMG or EXE. Initialized application automatically include [Bootstrap](http://getbootstrap.com/) and [JQuery](http://jquery.com).
 
 ## Installing
 
@@ -58,24 +58,26 @@ brew install wine
 
 ## Building
 
-The Grunt project is an extension of the [project-grunt](https://github.com/CloudKidStudio/project-grunt) and all those grunt tasks can be used on your app. In addition, there are several Grunt tasks that are specific and useful to building your node-webkit application:
+The Grunt project is an extension of the [project-grunt](https://github.com/CloudKidStudio/project-grunt) and all those grunt tasks can be used on your app. In addition, there are several Grunt tasks that are specific and useful to building your NW.js application:
 
 Task | Description
 ---|---
-**app** | Builds a release version of the node-webkit app
-**app-debug** | Builds a debug version of the node-webkit app
-**package** | Create the OSX and Windows installers
-**open** | Open the OSX application
+**app[:(platform)]** | Builds a release version of the NW.js app
+**app-debug[:(platform)]** | Builds a debug version of the NW.js app
+**package[:(platform)]** | Create the installers
+**open:(platform)** | Open the application, requires a platform.
+
+* _platform_ Valid types include `osx32`, `osx64`, `win32`, `win64`
 
 ### Examples
 
-Build the application in debug mode and run:
+Build the application in debug mode and run for OS X 64-bit:
 
 ```bash
-grunt app-debug open
+grunt app-debug:osx64 open:osx64
 ```
 
-Build the release application and package to installers:
+Build the release application and package to all installers:
 
 ```bash
 grunt app package
@@ -108,8 +110,7 @@ if (WEB)
 
 ## Examples
 
-* [RemoteTrace](https://github.com/CloudKidStudio/RemoteTrace)
-* [CaptionCreator](https://github.com/CloudKidStudio/CaptionCreator)
+* [SpringRollStudio](https://github.com/SpringRoll/SpringRollStudio)
 
 ##License
 

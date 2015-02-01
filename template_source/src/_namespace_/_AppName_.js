@@ -1,7 +1,7 @@
 (function(){
 
 	// Import classes
-	var NodeWebkitApp = cloudkid.NodeWebkitApp;
+	var NodeWebkitApp = include('cloudkid.NodeWebkitApp');
 
 	/**
 	*  Node Webkit Application
@@ -29,7 +29,7 @@
 	};
 
 	// Reference to the prototype
-	var p = _AppName_.prototype = Object.create(NodeWebkitApp.prototype);
+	var p = extend(_AppName_, NodeWebkitApp);
 
 	/**
 	*  Called when the application is quit. Should do any cleanup here to be safe.

@@ -2,8 +2,6 @@
 	"name": "_AppName_",
 	"version": "0.0.1",
 	"main": [
-		"components/node-webkit-app/src/utils/UpdateChecker.js",
-		"components/node-webkit-app/src/utils/Browser.js",
 		"components/node-webkit-app/src/NodeWebkitApp.js",
 		"src/_namespace_/_AppName_.js",
 		"src/_namespace_/_AppName_.less"
