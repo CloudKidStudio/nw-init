@@ -1,6 +1,6 @@
 # NW.js Application Initializer
 
-[![Dependency Status](https://david-dm.org/CloudKidStudio/nw-init.svg)](https://david-dm.org/CloudKidStudio/nw-init) [![npm version](https://badge.fury.io/js/nw-init.svg)](http://badge.fury.io/js/nw-init)
+[![Dependency Status](https://david-dm.org/CloudKidStudio/nw-init.svg)](https://david-dm.org/CloudKidStudio/nw-init) [![npm version](https://badge.fury.io/js/nw-init.svg)](http://badge.fury.io/js/nw-init)  ![Not maintained](https://img.shields.io/badge/maintained%3F-no!-red.svg?style=flat)
 
 Node plugin for creating scaffolding necessary to start a new NW.js application. This creates the project structure need to build Windows and OSX Applications. It also will package your application into a sexy and simple setup installer DMG or EXE. Initialized application automatically include [Bootstrap](http://getbootstrap.com/) and [JQuery](http://jquery.com).
 
