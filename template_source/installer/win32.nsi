@@ -20,6 +20,9 @@ OutFile "..\build\${APPNAME}-Setup-x32.exe"
 # Destintation install directory
 InstallDir "$PROGRAMFILES\${APPNAME}"
 
+# Install as administrator
+RequestExecutionLevel admin
+
 # default section start
 Section
 
